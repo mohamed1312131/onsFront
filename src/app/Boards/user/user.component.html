@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+<h2> Users List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> username</th>
+            <th> email </th>
+            <th>Password</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of users; let i=index" >
+            <td > {{ u.username }} </td>
+            <td> {{ u.email }} </td>
+            <td > {{ u.password}}</td>
+            <td>
+                <button (click)="open(u.id)" class = "btn btn-info"> Message</button>
+                <button (click)="deleteUser(u.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+
+              </td>
+        </tr>
+    </tbody>
+</table>
+</div>

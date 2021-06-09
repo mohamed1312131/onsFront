@@ -1,0 +1,16 @@
+ul.nav{
+  margin-left: 150px;
+  text-decoration-color: black;
+  color: black;
+}
+button{
+  border-color: black;
+  text-decoration: black;
+}
+button:hover {
+  background-color:gray;
+
+}
+h1{
+  color: black;
+}
